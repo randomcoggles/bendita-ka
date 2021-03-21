@@ -1,0 +1,23 @@
+.cards {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  mat-card {
+    min-width: 280px;
+    max-width: 420px;
+  }
+}
+:host ::ng-deep{
+  .mat-card-header .mat-card-title {
+    font-family: 'Tangerine';
+    font-size: 32px;
+  }
+  .mat-card>.mat-card-actions{
+    display: flex;
+  }
+  button a {
+    text-decoration: none;
+  }
+}
+

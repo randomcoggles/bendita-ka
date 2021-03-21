@@ -1,0 +1,10 @@
+.cards {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  mat-card {
+    min-width: 280px;
+    max-width: 420px;
+  }
+}

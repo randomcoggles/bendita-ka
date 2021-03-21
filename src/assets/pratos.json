@@ -1,0 +1,237 @@
+[
+    {
+      "id": 1,
+      "preco": 15,
+      "nome": "Frango Siciliano",
+      "descricao": "Iscas de frango ao limão siciliano com legumes salteados e purê de abóbora cabotiá",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "Frango ao molho",
+            "250g de arroz",
+            "200g de feijão preto",
+            "1 salada - alface, tomate, cebola"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 2,
+      "preco": 15,
+      "nome": "Hamburgócolis",
+      "descricao": "Mini hambúrgueres de frango com arroz de brócolis",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 3,
+      "preco": 15,
+      "nome": "Hamburgócolis",
+      "descricao": "Escondidinho de mandioquinha com frango desfiado",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 4,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Escondidinho de batata doce com frango desfiado",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 5,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Frango xadrez com arroz integral",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 6,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Lagarto cozido com legumes grelhados e arroz integral",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 7,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Carne louca com batata doce assada",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 13,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Lombo com legumes grelhados",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 17,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "2 Panquecas massa integral de ricota com espinafre",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 18,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Abobrinhas recheadas com ricota",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 19,
+      "preco": 15,
+      "nome": "Frango Xadrez",
+      "descricao": "Purê de batata doce com carne louca vegetal",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 27,
+      "preco": 15,
+      "nome": "Salada",
+      "descricao": "Saladas de pote 300 ml",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    },
+    {
+      "id": 61,
+      "preco": 15,
+      "nome": "Salada",
+      "descricao": "Saladas de pote 300 ml",
+      "composicao":{
+        "mostrar": 0,
+        "conteudo":[
+            "01 Hamburger de 200mg ao molho",
+            "250g de arroz",
+            "200g de feijão preto"
+        ]
+      },
+      "entregaEm": "20 minutos",
+      "Observacao": "Não acompanha salada",
+      "secao": "fitness",
+      "tipoPrato": "avinos"
+    }
+]

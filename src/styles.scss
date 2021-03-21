@@ -1,1 +1,94 @@
-/* You can add global styles to this file, and also import other style files */
+/* Add application styles & imports to this file! */
+/* You can add global styles to this file, and also import other style files
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+*/
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+//@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+/*
+deeppurple-amber.css
+indigo-pink.css
+pink-bluegrey.css
+purple-green.css
+*/
+
+@import "./app/shared/styles/utilities/_variables.scss";
+@import "./app/shared/styles/utilities/_mixins.scss";
+html {
+  background: linear-gradient(to bottom, #f78332 1%, #fbc199 100%);
+  background-repeat: no-repeat;
+}
+body {
+  border: dashed red 10px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  font-family: "Tangerine";
+  font-size: 24px;
+}
+.d-flex {
+  display: flex;
+  &.col {
+    flex-direction: column;
+  }
+  &.center {
+    align-items: center;
+  }
+}
+.mat-icon.material-icons.twin {
+  font-size: 15px;
+  position: absolute;
+  margin-left: 10px;
+  transform: rotate(31deg) scaleX(-1);
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+.d-flex {
+  display: flex;
+}
+.page-main-content.default-host {
+  margin: 1em;
+  border-radius: 8px;
+  background-color: #fff;
+
+  @include breakpoint-max($breakpoint-small-max) {
+    margin: 0;
+  }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.mat-icon {
+  display: none !important;
+}
+:host ::ng-deep {
+  .mat-toolbar.mat-primary,
+  .mat-flat-button.mat-primary,
+  .mat-raised-button.mat-primary,
+  .mat-fab.mat-primary,
+  .mat-mini-fab.mat-primary {
+    background: #f56400;
+    color: #fff;
+  }
+}

@@ -1,0 +1,85 @@
+// ---------- COLORS ----------
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f8f9fa;
+$dark: #343a40;
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// ---------- BORDERS ----------
+
+// ---------- BACKGROUNDS ----------
+
+// ---------- SPACING ----------
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;
+// margins
+// paddings
+
+// ---------- Z-INDEX'S ----------
+$z-index1071: 1071;
+
+// ---------- BREAKPOINTS ----------
+
+// Mobile devices
+$breakpoint-xsmall-min: 320px;
+$breakpoint-xsmall-max: 480px;
+
+// iPads, Tablets
+$breakpoint-small-min: 481px;
+$breakpoint-small-max: 768px;
+
+// Small screens, laptops
+$breakpoint-medium-min: 769px;
+$breakpoint-medium-max: 1024px;
+
+// Desktops, large screens
+$breakpoint-large-min: 1025px;
+$breakpoint-large-max: 1200px;
+
+// Extra large screens, TV
+$breakpoint-xlarge-min: 1201px;
+
+$breakpoints: (
+  // Mobile devices
+  xsmall-min: 320px,
+  xsmall-max: 480px,
+  // iPads, Tablets
+  small-min: 481px,
+  small-max: 768px,
+  // Small screens, laptops
+  medium-min: 769px,
+  medium-max: 1024px,
+  // Desktops, large screens
+  large-min: 1025px,
+  large-max: 1200px,
+  // Extra large screens, TV
+  xlarge-min: 1201
+) !default;

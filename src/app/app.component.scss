@@ -1,0 +1,200 @@
+@import "./shared/styles/utilities/_variables.scss";
+@import "./shared/styles/utilities/_mixins.scss";
+
+.app-top-nav {
+  padding-left: 0;
+}
+
+@media (max-width: $breakpoint-xsmall-max) {
+  .welcome-title {
+    display: none;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+  .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    color: #cbbde2;
+    outline: dashed 1px;
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+}
+.user-widget-wrap {
+  cursor: pointer;
+}
+.user-title {
+  margin-right: 8px;
+  font-size: 16px;
+
+  @include breakpoint-max(445px) {
+    display: none;
+  }
+}
+.mr-8 {
+  margin-right: 8px;
+}
+.user-img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title {
+  font-family: "Tangerine";
+  font-size: 30px;
+  display: flex;
+  .app-name {
+    font-size: 36px;
+    //@include breakpoint-min(580px) {
+    //display: inherit;
+    //}
+  }
+  .author {
+    @include breakpoint-min($breakpoint-small-max) {
+      display: inherit;
+    }
+  }
+
+  .angular-version {
+    @include breakpoint-min($breakpoint-medium-max) {
+      display: inherit;
+    }
+  }
+}
+// TODO: remove this
+@include breakpoint-max($breakpoint-small-max) {
+  .hide-small {
+    display: none;
+  }
+}
+
+p {
+  font-family: Lato;
+}
+
+.side-nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  flex: 100%;
+}
+.app-side-nav {
+  min-width: 240px;
+  width: 240px;
+}
+.app-header {
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+}
+::ng-deep {
+  mat-list.mat-list.mat-list-base.side-menu {
+    position: fixed;
+  }
+  mat-sidenav.mat-drawer-over.mat-drawer-opened .mat-list.side-menu {
+    background-color: #3f52b5;
+  }
+}
+
+.page-main {
+  min-height: 100vh;
+  min-height: calc(100vh - 128px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+  margin-top: 64px;
+}
+.side-menu {
+  padding-top: 0;
+  min-width: 240px;
+}
+
+.flex {
+  flex: 1;
+}
+.page-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  background-color: #f2f2f2;
+}
+mat-sidenav {
+  background-color: transparent;
+}
+
+.menu-icon {
+  margin-right: 10px;
+}
+.menu-icon:before {
+  content: "\2630";
+}
+
+.side-menu mat-list-item {
+  color: #fff;
+  margin-top: 1px;
+}
+
+.mat-drawer,
+.mat-drawer-container {
+  background-color: transparent;
+}
+.mat-drawer-side {
+  border-right: solid 1px transparent;
+  background-color: transparent;
+}
+.side-menu mat-list-item:hover {
+  background-color: #a0aec0 !important;
+  cursor: pointer;
+}
+.header-title {
+  margin-right: auto;
+}
+.side-panel-overlay {
+  transform: translateX(3110px);
+  transition: transform 1.5s, background-color 0.5s;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 9999;
+  &.active {
+    display: block;
+    background-color: rgb(0 0 0 / 75%);
+    transform: translateX(0px);
+    transition: transform 0.5s;
+  }
+}
+.side-overlay-panel-content {
+  transform: translateX(3110px);
+  transition: transform 1.5s;
+  top: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  min-width: 70px;
+  background-color: #fff;
+  overflow-y: auto;
+  z-index: 9999;
+  &.active {
+    display: block;
+    transform: translateX(0px);
+    transition: transform 0.5s;
+  }
+}

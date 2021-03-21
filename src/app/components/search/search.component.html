@@ -1,0 +1,11 @@
+<form class="search-form d-flex">
+    <input type="text" placeholder="Encontre seu prato" class="form-control" [formControl]="searchCtrl" [matAutocomplete]="auto">
+    <button mat-button  matSuffix mat-icon-button aria-label="Clear" >
+      <span class="material-icons">search</span>
+    </button>
+    <mat-autocomplete #auto="matAutocomplete" [displayWith]="displayFn">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option.nome}} - {{option.descricao}}
+      </mat-option>
+    </mat-autocomplete>
+</form>
