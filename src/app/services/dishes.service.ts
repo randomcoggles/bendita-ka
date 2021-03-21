@@ -12,7 +12,7 @@ export class DishesService {
   constructor(private http: HttpClient) {}
 
   getDishes(): Observable<IDish[]> {
-    return this.http.get<IDish[]>('bendita-ka/dist//assets/pratos.json');
+    return this.http.get<IDish[]>('bendita-ka/dist/assets/pratos.json');
   }
 
   getTodaysSpecial(): Observable<IDish[]> {
@@ -20,7 +20,7 @@ export class DishesService {
       switchMap((dishes: IDish[]) => {
         let filteredDishes;
         return this.http
-          .get<number[]>('bendita-ka/dist//assets/pratos-do-dia.json')
+          .get<number[]>('bendita-ka/dist/assets/pratos-do-dia.json')
           .pipe(
             map((ids: number[]) => {
               return dishes.filter((dish) => ids.includes(dish.id as number));
