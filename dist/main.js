@@ -35,12 +35,12 @@ class DishesService {
         this.http = http;
     }
     getDishes() {
-        return this.http.get('./assets/pratos.json');
+        return this.http.get('dist/assets/pratos.json');
     }
     getTodaysSpecial() {
         return this.getDishes().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["switchMap"])((dishes) => {
             let filteredDishes;
-            return this.http.get('./assets/pratos-do-dia.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((ids) => {
+            return this.http.get('dist/assets/pratos-do-dia.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((ids) => {
                 return dishes.filter((dish) => ids.includes(dish.id));
             }));
         }));
