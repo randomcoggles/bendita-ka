@@ -198,3 +198,23 @@ mat-sidenav {
     transition: transform 0.5s;
   }
 }
+
+:host ::ng-deep {
+  .mat-toolbar.mat-primary,
+  .mat-flat-button.mat-primary,
+  .mat-raised-button.mat-primary,
+  .mat-fab.mat-primary,
+  .mat-mini-fab.mat-primary {
+    background: #f56400;
+    color: #fff;
+  }
+}
+
+.mat-toolbar.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background: #f56400;
+  color: #fff;
+}
