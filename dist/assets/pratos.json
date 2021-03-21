@@ -3,7 +3,7 @@
     "id": 1,
     "preco": 15,
     "nome": "Frango Siciliano",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Iscas de frango ao limão siciliano com legumes salteados e purê de abóbora cabotiá",
     "composicao": {
       "mostrar": 0,
@@ -23,7 +23,7 @@
     "id": 2,
     "preco": 15,
     "nome": "Hamburgócolis",
-    "imageUrl": "assets/images/pratos/img02.png",
+    "imageUrl": "assets/images/pratos/img02.jpeg",
     "descricao": "Mini hambúrgueres de frango com arroz de brócolis",
     "composicao": {
       "mostrar": 0,
@@ -42,7 +42,7 @@
     "id": 3,
     "preco": 15,
     "nome": "Escondidinho de mandioquinha",
-    "imageUrl": "assets/images/pratos/img03.png",
+    "imageUrl": "assets/images/pratos/img03.jpeg",
     "descricao": "Escondidinho de mandioquinha com frango desfiado",
     "composicao": {
       "mostrar": 0,
@@ -61,7 +61,7 @@
     "id": 4,
     "preco": 15,
     "nome": "Escondidinho de batata doce",
-    "imageUrl": "assets/images/pratos/img04.png",
+    "imageUrl": "assets/images/pratos/img04.jpeg",
     "descricao": "Escondidinho de batata doce com frango desfiado",
     "composicao": {
       "mostrar": 0,
@@ -80,7 +80,7 @@
     "id": 5,
     "preco": 15,
     "nome": "Frango Xadrez",
-    "imageUrl": "assets/images/pratos/img05.png",
+    "imageUrl": "assets/images/pratos/img05.jpeg",
     "descricao": "Frango xadrez com arroz integral",
     "composicao": {
       "mostrar": 0,
@@ -99,7 +99,7 @@
     "id": 6,
     "preco": 15,
     "nome": "Lagarto",
-    "imageUrl": "assets/images/pratos/img06.png",
+    "imageUrl": "assets/images/pratos/img06.jpeg",
     "descricao": "Lagarto cozido com legumes grelhados e arroz integral",
     "composicao": {
       "mostrar": 0,
@@ -118,7 +118,7 @@
     "id": 7,
     "preco": 15,
     "nome": "Carne louca",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Carne louca com batata doce assada",
     "composicao": {
       "mostrar": 0,
@@ -137,7 +137,7 @@
     "id": 13,
     "preco": 15,
     "nome": "Lombo",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Lombo com legumes grelhados",
     "composicao": {
       "mostrar": 0,
@@ -156,7 +156,7 @@
     "id": 17,
     "preco": 15,
     "nome": "Panqueca",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "2 Panquecas massa integral de ricota com espinafre",
     "composicao": {
       "mostrar": 0,
@@ -175,7 +175,7 @@
     "id": 18,
     "preco": 15,
     "nome": "Abobrinhas recheadas",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Abobrinhas recheadas com ricota",
     "composicao": {
       "mostrar": 0,
@@ -194,7 +194,7 @@
     "id": 19,
     "preco": 15,
     "nome": "Purê de batata doce",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Purê de batata doce com carne louca vegetal",
     "composicao": {
       "mostrar": 0,
@@ -213,7 +213,7 @@
     "id": 27,
     "preco": 15,
     "nome": "Salada",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Saladas de pote 300 ml",
     "composicao": {
       "mostrar": 0,
@@ -232,7 +232,7 @@
     "id": 61,
     "preco": 15,
     "nome": "Saladas de pote",
-    "imageUrl": "assets/images/pratos/img01.png",
+    "imageUrl": "assets/images/pratos/img01.jpeg",
     "descricao": "Saladas de pote 300 ml",
     "composicao": {
       "mostrar": 0,
