@@ -12,6 +12,7 @@ export class DishesService {
   constructor(private http: HttpClient) {}
 
   getDishes(): Observable<IDish[]> {
+    console.log('bendita-ka/dist/assets/pratos-do-dia.json');
     return this.http.get<IDish[]>('bendita-ka/dist/assets/pratos.json');
   }
 
