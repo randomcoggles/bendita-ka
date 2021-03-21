@@ -52,6 +52,7 @@
   display: flex;
   .app-name {
     font-size: 36px;
+    font-weight: bold;
     //@include breakpoint-min(580px) {
     //display: inherit;
     //}

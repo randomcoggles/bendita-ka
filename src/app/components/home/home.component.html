@@ -1,2 +1,5 @@
-
-<app-dishes-list [dishes$]="todaysSpecialItems$" ></app-dishes-list>
+<app-search (onSearch)="onSearch($event)"></app-search>
+<mat-nav-list>
+  <a mat-list-item routerLink="filter.link" *ngFor="let filter of filters"> {{ filter.title }} </a>
+</mat-nav-list>
+<app-dishes-list [dishes$]="todaysSpecialItems$"></app-dishes-list>

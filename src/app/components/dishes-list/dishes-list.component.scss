@@ -10,8 +10,9 @@
 }
 :host ::ng-deep {
   .mat-card-header .mat-card-title {
-    font-family: "Tangerine";
-    font-size: 32px;
+    font-family: Tangerine;
+    font-size: 34px;
+    font-weight: bold;
   }
   .mat-card > .mat-card-actions {
     display: flex;
