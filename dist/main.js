@@ -35,19 +35,20 @@ class DishesService {
         this.http = http;
     }
     getDishes() {
-        return this.http.get('dist/assets/pratos.json');
+        console.log('bendita-ka/dist/assets/pratos-do-dia.json');
+        return this.http.get('bendita-ka/dist/assets/pratos.json');
     }
     getTodaysSpecial() {
         return this.getDishes().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["switchMap"])((dishes) => {
-            let filteredDishes;
-            return this.http.get('dist/assets/pratos-do-dia.json').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((ids) => {
+            return this.http
+                .get('bendita-ka/dist/assets/pratos-do-dia.json')
+                .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((ids) => {
                 return dishes.filter((dish) => ids.includes(dish.id));
             }));
         }));
     }
     find(term) {
         return this.getDishes().pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_0__["map"])((dishes) => {
-            console.log('--->', term, '  <----sdfsdf\n\n\n', dishes);
             const filteredDishes = [];
             const dishesByName = dishes.filter((dish) => {
                 return dish.nome.toLocaleLowerCase().indexOf(term) > -1;
