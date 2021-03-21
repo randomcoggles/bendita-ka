@@ -8,16 +8,24 @@
     max-width: 420px;
   }
 }
-:host ::ng-deep{
+:host ::ng-deep {
   .mat-card-header .mat-card-title {
-    font-family: 'Tangerine';
+    font-family: "Tangerine";
     font-size: 32px;
   }
-  .mat-card>.mat-card-actions{
+  .mat-card > .mat-card-actions {
     display: flex;
   }
   button a {
     text-decoration: none;
   }
 }
-
+.d-flex {
+  display: flex;
+}
+.preco {
+  font-size: 23px;
+  font-weight: bold;
+  text-shadow: 4px 4px 22px;
+  min-width: 100px;
+}

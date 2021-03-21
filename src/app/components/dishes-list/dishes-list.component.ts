@@ -8,12 +8,11 @@ import { IDish } from '../../services/models';
   styleUrls: ['./dishes-list.component.scss'],
 })
 export class DishesListComponent {
-  greeting = 'Olá, desejo encomendar o prato ';
+  greeting = 'Olá.\nDesejo encomendar o prato ';
   @Input() dishes$: Observable<IDish[]> = of([]);
 
   itemWhatsUp(item: IDish): string {
-    let message = `
-      ${this.greeting} \n${item.nome} (${item.id})
+    let message = `${this.greeting} ${item.nome}
       `;
     return (
       'https://api.whatsapp.com/send?phone=+5511961669777&text=' +

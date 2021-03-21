@@ -6,8 +6,9 @@
     </mat-card-header>
     <img mat-card-image [src]="item.imageUrl" [attr.alt]="item.descricao || item.nome">
     <mat-card-content>
-      <p>
-        {{item.descricao}}
+      <p class="d-flex">
+        <span class="descr">{{item.descricao}}</span>
+        <span class="preco">R$: {{item.preco}},00</span>
       </p>
     </mat-card-content>
     <mat-card-actions>

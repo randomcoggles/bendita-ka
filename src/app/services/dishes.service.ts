@@ -40,6 +40,7 @@ export class DishesService {
   find(term: string): Observable<IDish[]> {
     return this.getDishes().pipe(
       map((dishes) => {
+        // TODO: remove special characters here
         const filteredDishes: IDish[] = [];
         const dishesByName = dishes.filter((dish) => {
           return dish.nome.toLocaleLowerCase().indexOf(term as string) > -1;

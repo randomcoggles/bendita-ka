@@ -15,7 +15,7 @@ export class SearchPageComponent implements OnInit {
   filteredItems$: Observable<IDish[]> = of([]);
 
   ngOnInit() {
-    this.filteredItems$ = this.dishesService.getTodaysSpecial();
+    this.filteredItems$ = this.dishesService.getDishes();
   }
 
   onSearch(searchText: string) {
@@ -23,8 +23,6 @@ export class SearchPageComponent implements OnInit {
     if (!termText) {
       return;
     }
-    // console.log('\n\n', termText);
-    // TODO: remove special characters here
     this.filteredItems$ = this.dishesService.find(termText);
   }
 }

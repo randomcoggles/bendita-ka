@@ -15,6 +15,6 @@ export class HomeComponent implements OnInit {
   error: any;
 
   ngOnInit() {
-    this.todaysSpecialItems$ = this.dishesService.getTodaysSpecial();
+    this.todaysSpecialItems$ = this.dishesService.getDishes();
   }
 }
