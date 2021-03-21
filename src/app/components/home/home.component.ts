@@ -10,10 +10,18 @@ import { IDish } from '../../services/models';
 })
 export class HomeComponent implements OnInit {
   filters = [
-    { title: 'Pratos', link: '/search?section=pratos' },
-    { title: 'Sobremesas', link: '/search?section=sobremesas' },
-    { title: 'Saladas', link: '/search?section=saladas' },
-    { title: 'Cardápio vegano/vegetariano', link: '/search?section=veg' },
+    { title: 'Pratos', link: '/search', queryParams: { section: 'pratos' } },
+    {
+      title: 'Cardápio vegano/vegetariano',
+      link: '/search',
+      queryParams: { section: 'veg' },
+    },
+    {
+      title: 'Sobremesas',
+      link: '/search',
+      queryParams: { section: 'sobremesas' },
+    },
+    { title: 'Saladas', link: '/search', queryParams: { section: 'saladas' } },
   ];
   constructor(private dishesService: DishesService) {}
 

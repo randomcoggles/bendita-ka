@@ -1,11 +1,8 @@
 <app-search (onSearch)="onSearch($event)"></app-search>
 <mat-chip-list>
-  <mat-chip [routerLink]="filter.link" class="example-box" cdkDrag *ngFor="let filter of filters">
-    {{ filter.title }}
+  <mat-chip [routerLink]="filter.link" [queryParams]="filter.queryParams" class="example-box" cdkDrag
+    *ngFor="let filter of filters">
+    <span class="chip-title">{{ filter.title }}</span>
   </mat-chip>
 </mat-chip-list>
-
-<mat-nav-list>
-  <a mat-list-item *ngFor="let filter of filters"> {{ filter.title }} </a>
-</mat-nav-list>
 <app-dishes-list [dishes$]="todaysSpecialItems$"></app-dishes-list>
