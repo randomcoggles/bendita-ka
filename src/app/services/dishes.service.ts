@@ -18,7 +18,6 @@ export class DishesService {
   getTodaysSpecial(): Observable<IDish[]> {
     return this.getDishes().pipe(
       switchMap((dishes: IDish[]) => {
-        let filteredDishes;
         return this.http
           .get<number[]>('bendita-ka/dist/assets/pratos-do-dia.json')
           .pipe(
