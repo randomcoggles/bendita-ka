@@ -13,7 +13,14 @@ export class DishesService {
 
   getDishes(): Observable<IDish[]> {
     console.log('bendita-ka/dist/assets/pratos-do-dia.json');
-    return this.http.get<IDish[]>('bendita-ka/dist/assets/pratos.json');
+    return this.http.get<IDish[]>('assets/pratos.json').pipe(
+      map((items) => {
+        items.forEach((item) => {
+          item.imageUrl = 'bendita-ka/dist/' + item.imageUrl;
+        });
+        return items;
+      })
+    );
   }
 
   getTodaysSpecial(): Observable<IDish[]> {
