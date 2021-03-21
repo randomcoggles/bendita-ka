@@ -12,14 +12,14 @@ export class DishesService {
   constructor(private http: HttpClient) {}
 
   getDishes(): Observable<IDish[]> {
-    return this.http.get<IDish[]>('./assets/pratos.json');
+    return this.http.get<IDish[]>('assets/pratos.json');
   }
 
   getTodaysSpecial(): Observable<IDish[]> {
     return this.getDishes().pipe(
       switchMap((dishes: IDish[]) => {
         let filteredDishes;
-        return this.http.get<number[]>('./assets/pratos-do-dia.json').pipe(
+        return this.http.get<number[]>('assets/pratos-do-dia.json').pipe(
           map((ids: number[]) => {
             return dishes.filter((dish) => ids.includes(dish.id as number));
           })
