@@ -33,7 +33,6 @@ export class DishesService {
   find(term: string): Observable<IDish[]> {
     return this.getDishes().pipe(
       map((dishes) => {
-        console.log('--->', term, '  <----sdfsdf\n\n\n', dishes);
         const filteredDishes: IDish[] = [];
         const dishesByName = dishes.filter((dish) => {
           return dish.nome.toLocaleLowerCase().indexOf(term as string) > -1;
