@@ -25,7 +25,17 @@
 }
 .preco {
   font-size: 23px;
-  font-weight: bold;
+  font-weight: 700;
   text-shadow: 4px 4px 22px;
   min-width: 100px;
+  color: #fff;
+  background-color: #f56401;
+  padding: 0.25em;
+  border-radius: 8px;
+  transform: rotate(-38deg);
+  margin-top: -26px;
+  display: block;
+  position: absolute;
+  right: -21px;
+  bottom: 135px;
 }
